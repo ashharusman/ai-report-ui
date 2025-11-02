@@ -23,7 +23,7 @@ function TemplateUpload({ onUploadSuccess }) {
     formData.append("template", selectedFile);
 
     try {
-      const response = await fetch("https://ai-report-8aglyebd0-ashhar-usmans-projects.vercel.app/upload-template", {
+      const response = await fetch("http://ai-report-new.vercel.app/upload-template", {
         method: "POST",
         body: formData,
       });
