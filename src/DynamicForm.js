@@ -46,7 +46,7 @@ function DynamicForm({ fields, file, onBack }) {
       data.append('template', file);
       data.append('userInputs', JSON.stringify(formData));
 
-      const response = await fetch('http://localhost:3000/generate-new-report', {
+      const response = await fetch('https://ai-report-8aglyebd0-ashhar-usmans-projects.vercel.app/generate-new-report', {
         method: 'POST',
         body: data,
       });
